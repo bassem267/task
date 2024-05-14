@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'chmod +x bash.sh'
-                sh './bash.sh'
+                // Ensure correct path separator for Windows
+                bat 'bash.sh'
             }
         }
     }
