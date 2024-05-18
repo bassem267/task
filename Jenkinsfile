@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Ensure correct path separator for Windows
-                bat 'bash.sh'
+                bat 'dir.bat'
             }
         }
     }
