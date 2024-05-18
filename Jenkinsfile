@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    dir('/') {
+                    dir('C:/ProgramData/Jenkins/.jenkins/workspace/Jenkins Task') {
                         bat 'dir2.bat'
                     }
                 }
